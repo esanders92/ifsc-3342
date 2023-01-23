@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <!-- Defines the character encoding for the site, e.g., ASCII or UTF-16 -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Varies the visible area of the page to better fit the user's screen -->
+      <meta name="author" content="Eric Sanders" />
+      <!-- Defines the author of the page -->
+      <meta
+         name="description"
+         content="This is a skills pre-assessment for Mobile Web Development"
+      />
+      <!-- Defines a description for what the page's use is -->
+      <link rel="stylesheet" href="/pre-assessment/assets/css/screen.css" />
+      <title>Eric Sanders || IFSC 3342 Pre-Assessment</title>
+   </head>
+   <body>
+      <a href="#top"></a>
+      <div id="container">
+         <div id="header">
+            <h1>
+               <a href="index.html">ERIC SANDERS</a>
+            </h1>
+         </div>
+         <div id="nav">
+            <ul>
+               <li title="University of Arkansas at Little Rock Homepage">
+                  <a href="http://ualr.edu">UALR</a>
+               </li>
+               <li title="IFSC 3342 Course Homepage">
+                  <a
+                     href="https://thomaswallace.net/course/mobile-web/spring-2018/"
+                     >Course Homepage</a
+                  >
+               </li>
+               <li title="W3 Schools Homepage">
+                  <a href="http://www.w3.org/">W3C</a>
+               </li>
+               <li title="RECURSION">
+                  <a href="../pre-assessment/index.html">RECURSION</a>
+               </li>
+            </ul>
+         </div>
+         <div id="content">
+            <h2 class="h2">My Assessment</h2>
+            <!-- Hey Thomas! -->
+            <p>
+               The most important goal of effective communication is clarity.
+               Clarity is not the same as simplicity . Often, simple things are
+               clear if the message is intended to be brief and small, but often
+               the message is about a complex relationship that can only be
+               presented with a necessarily large amount of data.
+            </p>
+            <img
+               class="img"
+               src="/pre-assessment/assets/img/content-image2.jpg"
+               alt="/pre-assessment/assets/img/content-imagealt.jpg"
+            />
+            <p>
+               This complexity can be made to appear clear by effective
+               organization and presentation and need not be reduced to
+               meaningless "bite-sized" chunks of data, as simplification
+               usually does.
+            </p>
+            <p>
+               Clarity refers to the focus on one particular message or goal at
+               a time, rather than attempting to accomplish too much at once.
+               Simplicity is often responsible for the "dumbing" of information
+               rather than the illumination of it.
+            </p>
+            <h3 class="h3">Questions</h3>
+            <p>
+               Please answer the following questions below. Remember to markup
+               the information properly using HTML
+            </p>
+            <h4 class="h4">
+               Explain the difference between the &quot;alt&quot; attribute and
+               the &quot;title&quot; attribute.
+            </h4>
+            <p>
+               Anything with the &quot;title&quot; attribute will be used
+               alongside a given element, while the &quot;alt&quot; attribute
+               will be used in place of.
+            </p>
+            <h4 class="h4">
+               Please provide an example below of how to mark up a definition
+               from the dictionary
+            </h4>
+            <p class="alert">
+               <dfn>
+                  <abbr>
+                     <a
+                        href="https://www.merriam-webster.com/dictionary/HTML#:~:text=HTML%20noun%20%CB%8C%C4%81ch-%20%28%CB%8C%29t%C4%93-%20%28%CB%8C%29em-%CB%88el%20%3A%20a%20markup,Web%20incorporating%20text%2C%20graphics%2C%20sound%2C%20video%2C%20and%20hyperlinks"
+                     >
+                        HTML
+                     </a>
+                  </abbr>
+               </dfn>
+               a markup language that is used to create documents on the World
+               Wide Web incorporating text, graphics, sound, video, and
+               hyperlinks
+            </p>
+            <h4 class="h4">
+               Provide an example of link pointing to your favorite site &amp;
+               create a style rule to change the background color of the link
+               when the user hovers over it.
+            </h4>
+            <p>
+               <a href="https://recursivearts.com/virtual-piano/"
+                  >Recursive Piano</a
+               >
+            </p>
+         </div>
+         <div id="footer">
+            <h6>
+               <div id="current_date">
+                  <script>
+                     date = new Date();
+                     year = date.getFullYear();
+                     document.getElementById("current_date").innerHTML =
+                        "&copy" + year;
+                  </script>
+               </div>
+            </h6>
+            <form>
+               <input
+                  type="BUTTON"
+                  value="Return to top"
+                  onclick="window.location.href='#top'"
+               />
+            </form>
+         </div>
+      </div>
+   </body>
+</html>
