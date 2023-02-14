@@ -29,34 +29,43 @@ html {
   background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/7248/grid-1.png");*/
   
   main {
-    width: 960px;
-    margin: 45px auto;
+    width: 90vw; /* To convert px to %, divide px by this width, 960 in this case*/
+    /* margin: 45px auto; /* 45px/960 = 4.6875 */
+    margin: 4.6875% auto;
     border: 1px solid #000;
-    background-image: url("../img/grid.png");
+    /* background-image: url("../img/grid.png"); */
   }
   
   header.primary, footer.primary {
-    width: 870px;
-    margin: 45px;
+    /*width: 870px;*/
+    width: 90.625%; 
+    /* margin: 45px; */
+    margin: 4.6875%;
     background-color: rgba(255, 0, 0, 0.4);
     float: left;
-    padding: 45px;
+    /* padding: 45px; */
+    padding: 4.6875%;
   }
   
   #blog {
-    width: 570px;
+    /* width: 570px; */
+    width: 59.375%;
     background-color: rgba(0, 0, 0, 0.4);
     float: left;
-    margin-left: 45px;
-    padding: 30px;
+    /*margin-left: 45px;
+    padding: 30px;*/
+    margin-left: 4.6875%;
+    padding: 3.215%;
   }
 
   article.post {
-    padding: 15px
+    /*padding: 15px*/
+    padding: 1.5625%;
   }
 
   article.widget {
-    padding: 3px
+    /*padding: 3px*/
+    padding: .3125%;
   }
 
   time.post-date {
@@ -65,17 +74,19 @@ html {
   }
   
   aside {
-    width: 270px;
+    /* width: 270px; */
+    width: 28.125%;
     float: left;
     background-color: rgba(0, 0, 0, 0.4);
-    margin-left: 30px;
-    padding: 45px;
+    /*margin-left: 30px;
+    padding: 45px;*/
+    margin-left: 3.215%;
+    padding: 4.6875%;
   }
-  /* footer.primary {
-    width: 870px;
-    margin: 45px;
-    background-color: rgba(0, 0, 0, 0.4);
-    float: left;
-    padding: 45px;
-  } */
+
+  @media screen and (min-width: 400px) {
+    main {
+      width: 520;
+    }
+  }
   
