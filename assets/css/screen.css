@@ -20,6 +20,11 @@
     font-weight: 100;
     color: #736F60;
  }
+
+ nav{
+   padding-bottom: 10px;
+ }
+
  body {
 	text-align: center;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -27,6 +32,53 @@
 	background-color: #A8A99E;
 	font-size: 16px;
 	line-height: 1.5em;
+   overflow: auto;
+ }
+
+ .row{
+   display:grid;
+   grid-template-columns:repeat(4,1fr);
+   gap:20px;
+ }
+ 
+ .col{
+   padding:20px;
+   border:1px solid #c0c0c0;
+   border-radius:2px;
+ }
+
+ /* Base */
+ .col:nth-child(odd) {
+   outline: #33A4A6 solid 3px;
+ }
+ .col p {
+   color: #131313;
+   margin: 0px;
+   /*text-shadow: 1px 1px #000;*/
+ }
+ .fancy {
+   display: none;
+ }
+ 
+ /* Max Width */
+ @media screen and (max-width: 600px) {
+   .row{
+       grid-template-columns: 1fr;
+   }
+ }
+ 
+ /* Ranged */
+ @media screen and (max-width: 800px) and (min-width: 601px) {
+   .row{
+       grid-template-columns: repeat(2, 2fr);
+   }
+ }
+ 
+ /* Min Width */
+ @media screen and (min-width: 801px) {
+   .row{
+       grid-template-columns: repeat(4, 1fr);
+   }
  }
  footer {
     background-color: #A8A99E
