@@ -1,0 +1,110 @@
+/* apply a natural box layout model to all elements, but allowing components to change 
+http://thomaswallace.net/modules/understanding-web-related-terminology/
+http://www.paulirish.com/2012/box-sizing-border-box-ftw/*/
+  
+/* Base */
+html {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+header {
+    background-color: #A8A99E
+}
+
+h1 {
+    outline: #33A4A6 solid 5px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    width: 600px;
+    margin: auto;  
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 100;
+    color: #585857;
+}
+
+nav{
+    padding-bottom: 10px;
+}
+
+body {
+    text-align: center;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-image: url("../img/bg-tile.jpg");
+	background-color: #A8A99E;
+	font-size: 16px;
+	line-height: 1.5em;
+    overflow: auto;
+}
+
+footer {
+    outline: #33A4A6 solid 5px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    width: 600px;
+    margin: auto;  
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 50;
+    color: #585857;
+}
+
+.col{
+    padding:20px;
+    border:1px solid #c0c0c0;
+    border-radius:6px;
+}
+
+.col:nth-child(odd) {
+    background-color: #8fb87f;
+}
+.col p {
+    color: #fff;
+    margin: 0px;
+    text-shadow: 1px 1px #000;
+}
+.fancy {
+    display: none;
+}
+
+/*Base CSS*/
+.row{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-gap:20px;
+}
+
+/* Tablet */
+@media screen and (min-width:768px){
+    .row{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+/* Desktop*/
+@media screen and (min-width:992px){
+    .row{
+        grid-template-columns:repeat(4, 1fr);
+    }
+}
