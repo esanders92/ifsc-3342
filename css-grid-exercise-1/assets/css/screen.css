@@ -1,13 +1,9 @@
 body {
-    margin: 40px;
+    margin: 10px;
 }
 
 .sidebar {
     grid-area: sidebar;
-}
-
-.sidebar2 {
-    grid-area: sidebar2;
 }
 
 .content {
@@ -29,42 +25,39 @@ body {
 
 .wrapper {
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 5px;
     grid-template-areas:
         "header"
         "sidebar"
         "content"
-        "sidebar2"
-        "footer"
+        "footer";
 }
 
 @media only screen and (min-width: 400px) {
     .wrapper {
-        grid-template-columns: 20% auto;
+        grid-template-columns: 100% 1fr;
         grid-template-areas:
             "header   header"
-            "sidebar  content"
-            "sidebar2 sidebar2"
+            "content  content"
+            "sidebar  sidebar"
             "footer   footer";
-        width: 520;
     }
 }
 
 @media only screen and (min-width: 600px) {
     .wrapper {
-        grid-gap: 20px;
-        grid-template-columns: 120px auto 120px;
+        grid-gap: 10px;
+        grid-template-columns: 65% auto;
         grid-template-areas:
             "header  header  header"
-            "sidebar content sidebar2"
+            "content content sidebar"
             "footer  footer  footer";
-        max-width: 600px;
     }
 }
 
 .box {
     background-color: #444;
-    color: #fff;
+    color: rgb(163, 95, 95);
     border-radius: 5px;
     padding: 10px;
     font-size: 150%;
@@ -76,11 +69,11 @@ body {
 }
 
 .content {
-    background-color: #ccc;
-    color: #444;
+    background-color: rgb(153, 81, 81);
+    color: rgb(175, 175, 175);
 }
 
-.sidebar2 {
+.sidebar {
     background-color: #ccc;
     color: #444;
 }

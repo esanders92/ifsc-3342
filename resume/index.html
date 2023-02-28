@@ -16,30 +16,29 @@
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
-  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
   <link rel="stylesheet" href="assets/css/screen.css">
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+
+
 </head>
 
 <body>
   <header>
     <h1>Eric D. Sanders</h1>
-    <ul class="related-links">
-      <a itemprop="url" rel="me" href="https://github.com/profile">GitHub</a> ||
-      <a itemprop="url" rel="me" href="http://linkedin.com/profile">LinkedIn</a> ||
-    </ul>
     <nav class="primary">
-      <a href="#about">About</a> ||
-      <a href="#skills">Skills</a> ||
-      <a href="#experience">Experience</a> ||
-      <a href="#education">Education</a> ||
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
     </nav>
   </header>
-  <main itemscope itemtype="http://schema.org/Person">
+
+  <main class="content" itemscope itemtype="http://schema.org/Person">
+    <h1>Eric Sanders</h1>
     <section id="about">
-      <h2>Personal details</h2>
+      <h2 class="visuallyhidden">Personal Details</h2>
       <img itemprop="image" src="https://fakeimg.pl/400/" alt="Your Name">
       <p itemprop="description">Statement of Intent</p>
       <dl>
@@ -140,13 +139,23 @@
   </main>
 
   <footer>
+    <ul class="related-links">
+      <li>
+        <a itemprop="url" rel="me" href="https://github.com/profile"><i class="fab fa-github-square"></i> github</a>
+      </li>
+      <li>
+        <a itemprop="url" rel="me" href="http://linkedin.com/profile"><i class="fab fa-linkedin-in"></i> linkedin</a>
+      </li>
+      <li>
+        <a itemprop="url" href="resume.pdf" download><i class="far fa-file-pdf"></i> pdf resume</a>
+      </li>
+    </ul>
     <div id="copyright">
       &copy; company. All rights reserved.
 
       <a itemprop="url" href="resume.pdf" download>Resume (.PDF)</a>
     </div>
   </footer>
-  <!-- Add your site or application content here -->
 
   <script src="js/vendor/modernizr-3.12.0.min.js"></script>
   <script src="js/app.js"></script>
