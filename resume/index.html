@@ -40,7 +40,10 @@
     <section id="about">
       <h2 class="visuallyhidden">Personal Details</h2>
       <img itemprop="image" src="https://fakeimg.pl/400/" alt="Your Name">
-      <p itemprop="description">Statement of Intent</p>
+      <p itemprop="description">A constant student and driven worker, I am seeking a part-time or full-time position
+        with a talented
+        team to grow and hone my skillset. With a wide variety of past experience, I will bring different
+        perspectives and apply them to better help with any given project.</p>
       <dl>
         <dt>Name</dt>
         <dd itemprop="name">
@@ -71,58 +74,110 @@
       </dl>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li class="skill">HTML</li>
-        <li class="skill">PHP</li>
-        <li class="skill">Java</li>
-        <li class="skill">Scss</li>
-      </ul>
+    <section id="education-activities">
+
+      <article id="education">
+        <h2>Education</h2>
+        <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+          <h3 itemprop="description"><abbr title="Bachelor's of Science">B.S., </abbr>Computer Science</h3>
+          <span itemprop="name"><b>UNIVERSITY OF ARKANSAS AT LITTLE ROCK | </b>Expected
+            May 2024</span>
+          <span itemprop="location" itemscope>Little Rock, AR</span>
+        </article>
+
+        <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+          <h3 itemprop="description"><abbr title="Associate's of Computer Science">A.S., </abbr>Computer Programming
+          </h3>
+          <span itemprop="name"><b>Pulaski Technical College | </b>Graduated August 2020 | <i>GPA –
+              3.47
+            </i></span>
+          <span itemprop="location" itemscope>North Little Rock, AR</span>
+        </article>
+      </article>
+
+      <article id="education">
+        <h2>Education</h2>
+        <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+          <h3 itemprop="name">
+            <b>UNIVERSITY OF ARKANSAS AT LITTLE ROCK | </b>
+            <span itemprop="location" itemscope>
+              <small>Little Rock, AR</small>
+            </span>
+          </h3>
+          <span itemprop="description">
+            <abbr title="Bachelor's of Science">B.A., </abbr>
+            Computer Science | Expected May 2024
+          </span>
+        </article>
+
+        <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+          <h3 itemprop="name">
+            <b>PULAKSI TECHNICAL COLLEGE | </b>
+            <span itemprop="location" itemscope>
+              <small>North Little Rock, AR</small>
+            </span>
+          </h3>
+          <span itemprop="description"><abbr title="Associate's of Computer Science">A.S.,
+            </abbr>Computer Programming Graduated August 2020 |
+            <i>GPA – 3.47</i>
+          </span>
+        </article>
+      </article>
+
+      <article id="activities">
+        <h2>Activities</h2>
+        <article class="activity">
+          <h3><b>Rock City Robotics | <i id="role">Mentor</i></b></h3>
+          <p>- Received an award for being the highest placing rookie team</p>
+          <p>- Received an award for placing second in the state</p>
+        </article>
+      </article>
+
     </section>
 
     <section id="experience">
       <h2>Experience</h2>
       <!-- current job -->
       <article class="job">
-        <h3 itemprop="jobTitle">Lead Web Developer</h3>
+        <h3 itemprop="jobTitle">Sales Associate</h3>
         <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          <span itemprop="name">Company Name 1</span>
-          <span>February 2010 - Present</span>
+          <span itemprop="name">Lowe's Home Improvement</span>
+          <span>January 2022 - Present</span>
           <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
           <span itemprop="location" itemscope itemtype="http://schema.org/Place">
             <a itemprop="url" href="http://link-to-company.com">Company URL</a>
             <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-              <span itemprop="addressLocality">Anywhere,USA</span>
+              <span itemprop="addressLocality">Bentonville, AR</span>
             </span>
           </span>
         </div>
       </article>
       <!-- Previous Jobs - Notice Slightly Different Format-->
       <article class="job" itemscope itemtype="http://schema.org/Organization">
-        <h3 itemprop="name">Senior Developer</h3>
+        <h3 itemprop="name">Media Intern</h3>
         <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-          <span itemprop="name">Company Name 2</span>
+          <span itemprop="name">Dave Creek Media</span>
           <a itemprop="url" href="http://link-to-company.com">Company URL</a>
           <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <span itemprop="addressLocality">Anywhere,USA</span>
+            <span itemprop="addressLocality">Conway, AR</span>
           </span>
         </span>
-        <span itemprop="startDate" content="2006-02-21T20:00">February 2006</span>
-        <span itemprop="endDate" content="2009-02-21T20:00">February 2009</span>
+        <span itemprop="startDate" content="2019-06-21T20:00">June 2019 - </span>
+        <span itemprop="endDate" content="2019-08-21T20:00">August 2019</span>
         <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
       </article>
+
       <article class="job" itemscope itemtype="http://schema.org/Organization">
-        <h3 itemprop="name">Web Developer</h3>
+        <h3 itemprop="name">Laborer</h3>
         <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-          <span itemprop="name">Company Name 2</span>
+          <span itemprop="name">Baldwin and Shell Construction Company</span>
           <a itemprop="url" href="http://link-to-company.com">Company URL</a>
           <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <span itemprop="addressLocality">Anywhere, USA</span>
+            <span itemprop="addressLocality">Little Rock, AR</span>
           </span>
         </span>
-        <span itemprop="startDate" content="2004-01-21T20:00">January 2004</span>
-        <span itemprop="endDate" content="2006-02-21T20:00">February 2006</span>
+        <span itemprop="startDate" content="2015-08-21T20:00">August 2015</span>
+        <span itemprop="endDate" content="2017-06-21T20:00">June 2017</span>
         <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
       </article>
     </section>
@@ -147,13 +202,11 @@
         <a itemprop="url" rel="me" href="http://linkedin.com/profile"><i class="fab fa-linkedin-in"></i> linkedin</a>
       </li>
       <li>
-        <a itemprop="url" href="resume.pdf" download><i class="far fa-file-pdf"></i> pdf resume</a>
+        <a itemprop="url" href="assets/files/SANDERS_Resume.pdf" download><i class="far fa-file-pdf"></i> pdf resume</a>
       </li>
     </ul>
     <div id="copyright">
       &copy; company. All rights reserved.
-
-      <a itemprop="url" href="resume.pdf" download>Resume (.PDF)</a>
     </div>
   </footer>
 
