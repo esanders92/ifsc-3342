@@ -1,220 +1,220 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Resume</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="stylesheet" href="assets/css/screen.css">
-
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
-
-
+  <meta charset="utf-8" />
+  <title>CSS Grid Exercise 1</title>
+  <link rel="stylesheet" href="assets/css/screen.css" />
+  <meta name="description"
+    content="We are going to refine this document down to a good starting point for all html5 projects moving forward." />
+  <meta name="author" content="Eric Sanders" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="/favicon.ico" />
 </head>
 
 <body>
-  <header>
-    <h1>Eric D. Sanders</h1>
-    <nav class="primary">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-    </nav>
-  </header>
+  <main class="wrapper" itemscope itemtype="http://schema.org/Person">
+    <header class="box header">
+      <h1>Eric D. Sanders</h1>
 
-  <main class="content" itemscope itemtype="http://schema.org/Person">
-    <h1>Eric Sanders</h1>
-    <section id="about">
-      <h2 class="visuallyhidden">Personal Details</h2>
-      <img itemprop="image" src="https://fakeimg.pl/400/" alt="Your Name">
-      <p itemprop="description">A constant student and driven worker, I am seeking a part-time or full-time position
-        with a talented
-        team to grow and hone my skillset. With a wide variety of past experience, I will bring different
-        perspectives and apply them to better help with any given project.</p>
-      <dl>
-        <dt>Name</dt>
-        <dd itemprop="name">
-          <span itemprop="givenName">Eric</span> <span itemprop="familyName">Sanders</span>
-        </dd>
-        <dt>Date of birth</dt>
-        <dd itemprop="birthDate"><time datetime="1976-10-12">09/09/1992</time></dd>
-        <dt>Nationality</dt>
-        <dd itemprop="nationality">Nationality</dd>
-        <dt>Location</dt>
-        <dd itemprop="homeLocation">Arkansas</dd>
-        <dt>Telephone</dt>
-        <dd>
-          <a itemprop="telephone" href="tel:555.555.5555">(501) 515-8290</a>
-        </dd>
-        <dt>Email</dt>
-        <dd>
-          <a itemprop="email" href="mailto:email@mail.com">ersanders92@outlook.com</a>
-        </dd>
-        <dt>Address</dt>
+      <nav class="primary">
+        <button type="button" class="collapsible"><b>About Me</b></button>
 
-        <dd itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-          <span itemprop="streetAddress">4 Sean Ln</span>
-          <span itemprop="addressLocality">Bella Vista</span>
-          <span itemprop="postalCode">72714</span>
-          <span itemprop="addressCountry">USA</span>
-        </dd>
-      </dl>
-    </section>
-
-    <section id="education-activities">
-
-      <article id="education">
-        <h2>Education</h2>
-        <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
-          <h3 itemprop="description"><abbr title="Bachelor's of Science">B.S., </abbr>Computer Science</h3>
-          <span itemprop="name"><b>UNIVERSITY OF ARKANSAS AT LITTLE ROCK | </b>Expected
-            May 2024</span>
-          <span itemprop="location" itemscope>Little Rock, AR</span>
-        </article>
-
-        <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
-          <h3 itemprop="description"><abbr title="Associate's of Computer Science">A.S., </abbr>Computer Programming
-          </h3>
-          <span itemprop="name"><b>Pulaski Technical College | </b>Graduated August 2020 | <i>GPA –
-              3.47
-            </i></span>
-          <span itemprop="location" itemscope>North Little Rock, AR</span>
-        </article>
-      </article>
-
-      <article id="education">
-        <h2>Education</h2>
-        <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
-          <h3 itemprop="name">
-            <b>UNIVERSITY OF ARKANSAS AT LITTLE ROCK | </b>
-            <span itemprop="location" itemscope>
-              <small>Little Rock, AR</small>
-            </span>
-          </h3>
-          <span itemprop="description">
-            <abbr title="Bachelor's of Science">B.A., </abbr>
-            Computer Science | Expected May 2024
-          </span>
-        </article>
-
-        <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
-          <h3 itemprop="name">
-            <b>PULAKSI TECHNICAL COLLEGE | </b>
-            <span itemprop="location" itemscope>
-              <small>North Little Rock, AR</small>
-            </span>
-          </h3>
-          <span itemprop="description"><abbr title="Associate's of Computer Science">A.S.,
-            </abbr>Computer Programming Graduated August 2020 |
-            <i>GPA – 3.47</i>
-          </span>
-        </article>
-      </article>
-
-      <article id="activities">
-        <h2>Activities</h2>
-        <article class="activity">
-          <h3><b>Rock City Robotics | <i id="role">Mentor</i></b></h3>
-          <p>- Received an award for being the highest placing rookie team</p>
-          <p>- Received an award for placing second in the state</p>
-        </article>
-      </article>
-
-    </section>
-
-    <section id="experience">
-      <h2>Experience</h2>
-      <!-- current job -->
-      <article class="job">
-        <h3 itemprop="jobTitle">Sales Associate</h3>
-        <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          <span itemprop="name">Lowe's Home Improvement</span>
-          <span>January 2022 - Present</span>
-          <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
-          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-            <a itemprop="url" href="http://link-to-company.com">Company URL</a>
-            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-              <span itemprop="addressLocality">Bentonville, AR</span>
-            </span>
-          </span>
+        <div class="about">
+          <p itemprop="description">
+            A constant student and driven worker, I am seeking a
+            part-time or full-time position with a talented team to
+            grow and hone my skillset. With a wide variety of past
+            experience, I will bring different perspectives and apply
+            them to better help with any given project.
+          </p>
+          <img itemprop="image" src="assets/img/pic.png" alt="Eric Sanders" />
+          <dl>
+            <dt>Name</dt>
+            <dd itemprop="name">
+              <span itemprop="givenName">Eric</span>
+              <span itemprop="familyName">Sanders</span>
+            </dd>
+            <dt>Date of birth</dt>
+            <dd itemprop="birthDate">
+              <time datetime="1976-10-12">09/09/1992</time>
+            </dd>
+            <dt>Location</dt>
+            <dd itemprop="homeLocation">Bella Vista, Arkansas</dd>
+            <dt>Telephone</dt>
+            <dd>
+              <a itemprop="telephone" href="tel:555.555.5555">(501) 515-8290</a>
+            </dd>
+            <dt>Email</dt>
+            <dd>
+              <a itemprop="email" href="mailto:email@mail.com">ersanders92@outlook.com</a>
+            </dd>
+          </dl>
         </div>
-      </article>
-      <!-- Previous Jobs - Notice Slightly Different Format-->
-      <article class="job" itemscope itemtype="http://schema.org/Organization">
-        <h3 itemprop="name">Media Intern</h3>
-        <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-          <span itemprop="name">Dave Creek Media</span>
-          <a itemprop="url" href="http://link-to-company.com">Company URL</a>
-          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <span itemprop="addressLocality">Conway, AR</span>
-          </span>
-        </span>
-        <span itemprop="startDate" content="2019-06-21T20:00">June 2019 - </span>
-        <span itemprop="endDate" content="2019-08-21T20:00">August 2019</span>
-        <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
-      </article>
 
-      <article class="job" itemscope itemtype="http://schema.org/Organization">
-        <h3 itemprop="name">Laborer</h3>
-        <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-          <span itemprop="name">Baldwin and Shell Construction Company</span>
-          <a itemprop="url" href="http://link-to-company.com">Company URL</a>
-          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <span itemprop="addressLocality">Little Rock, AR</span>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+      </nav>
+    </header>
+
+    <aside class="box sidebar">
+      <section class="widget">
+        <button type="button" class="collapsible"><b>Education</b></button>
+        <section id="education" class="education">
+          <article class="certificate" itemprop="alumniOf" itemscope
+            itemtype="http://schema.org/EducationalOrganization">
+            <h2 itemprop="name">
+              <b>UNIVERSITY OF ARKANSAS AT LITTLE ROCK | </b>
+              <span itemprop="location" itemscope>
+                <small>Little Rock, AR</small>
+              </span>
+            </h2>
+            <span itemprop="description">
+              <abbr title="Bachelor's of Science">B.A., </abbr>
+              Computer Science | Expected May 2024
+            </span>
+          </article>
+
+          <article class="certificate" itemprop="alumniOf" itemscope
+            itemtype="http://schema.org/EducationalOrganization">
+            <h2 itemprop="name">
+              <b>PULASKI TECHNICAL COLLEGE | </b>
+              <span itemprop="location" itemscope>
+                <small>North Little Rock, AR</small>
+              </span>
+            </h2>
+            <span itemprop="description"><abbr title="Associate's of Computer Science">A.S., </abbr>Computer Programming
+              Graduated August 2020 |
+              <i>GPA – 3.47</i>
+            </span>
+          </article>
+        </section>
+
+        <button type="button" class="collapsible"><b>Activities</b></button>
+        <article id="activities" class="activities">
+          <article class="activity">
+            <h2>
+              <b>Rock City Robotics | <i id="role">Mentor</i></b>
+            </h2>
+            <p>
+              - Received an award for being the highest placing rookie
+              team
+            </p>
+            <p>- Received an award for placing second in the state</p>
+          </article>
+        </article>
+      </section>
+    </aside>
+
+    <section class="box content">
+      <button type="button" class="collapsible"><b>Experience</b></button>
+      <section id="experience" class="experience">
+        <!-- current job -->
+        <article class="job">
+          <h2 itemprop="jobTitle">Sales Associate
+          </h2>
+          <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+            <span itemprop="name"><a itemprop="url" href="http://link-to-company.com"><b>LOWE’S HOME
+                  IMPROVEMENT</b></a></span>
+            <span>January 2022 - Present</span>
+            <p itemprop="description">
+
+            </p>
+            <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+              <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="addressLocality">Bentonville, AR</span>
+              </span>
+            </span>
+          </div>
+        </article>
+        <!-- Previous Jobs - Notice Slightly Different Format-->
+        <article class="job" itemscope itemtype="http://schema.org/Organization">
+          <h2 itemprop="name">Media Intern</h2>
+          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+            <span itemprop="name"><a itemprop="url" href="http://link-to-company.com"><b>DAVE CREEK MEDIA</b></a>
+            </span>
+            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <span itemprop="addressLocality"> | <i>Conway, AR</i> | </span>
+            </span>
           </span>
-        </span>
-        <span itemprop="startDate" content="2015-08-21T20:00">August 2015</span>
-        <span itemprop="endDate" content="2017-06-21T20:00">June 2017</span>
-        <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
-      </article>
+          <span itemprop="startDate" content="2019-06-21T20:00">June 2019 -
+          </span>
+          <span itemprop="endDate" content="2019-08-21T20:00">August 2019</span>
+          <p itemprop="description">
+
+          </p>
+        </article>
+
+        <article class="job" itemscope itemtype="http://schema.org/Organization">
+          <h2 itemprop="name">Laborer</h2>
+          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+            <span itemprop="name"><a itemprop="url" href="http://link-to-company.com"><b>BALDWIN & SHELL CONSTRUCTION
+                  COMPANY</b></a></span>
+            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <span itemprop="addressLocality">| <i>Little Rock, AR</i> |</span>
+            </span>
+          </span>
+          <span itemprop="startDate" content="2015-08-21T20:00">August 2015</span>
+          <span itemprop="endDate" content="2017-06-21T20:00">June 2017</span>
+          <p itemprop="description">
+
+          </p>
+        </article>
+
+        <article class="job" itemscope itemtype="http://schema.org/Organization">
+          <h2 itemprop="name">Dish Washer/Line Cook</h2>
+          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+            <span itemprop="name"><a itemprop="url" href="http://link-to-company.com"><b>MAYFLOWER
+                  RESTURAUNT</b></a></span>
+            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <span itemprop="addressLocality">| <i>Fayetteville, AR</i> |</span>
+            </span>
+          </span>
+          <span itemprop="startDate" content="2014-08-21T20:00">August 2014</span>
+          <span itemprop="endDate" content="2015-06-21T20:00">June 2017</span>
+          <p itemprop="description">
+
+          </p>
+        </article>
+
+        <article class="job" itemscope itemtype="http://schema.org/Organization">
+          <h2 itemprop="name">Student Ambassador</h2>
+          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+            <span itemprop="name"><a itemprop="url" href="http://link-to-company.com"><b>UNIVERSITY OF ARKANSAS CENTER
+                  FOR MULTICULTURAL
+                  AND DIVERSITY EDUCATION</b></a></span>
+            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <span itemprop="addressLocality">| <i>Fayetteville, AR</i> |</span>
+            </span>
+          </span>
+          <span itemprop="startDate" content="2013-06-21T20:00">June 2013</span>
+          <span itemprop="endDate" content="2013-08-21T20:00">August 2013</span>
+          <p itemprop="description">
+
+          </p>
+        </article>
+      </section>
     </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
-        <h3 itemprop="description"><abbr title="Master of Science">BA</abbr>Web Design and Development</h3>
-        <span itemprop="name">University name 1</span>
-        <span itemprop="location" itemscope>Anywhere, USA</span>
-        <span>2005-2007</span>
-      </article>
-    </section>
+    <footer class="box footer">
+      <a itemprop="url" rel="me" href="https://github.com/profile">
+        <i class="fab fa-github-square"></i> Github
+      </a>
+
+      <a itemprop="url" rel="me" href="http://linkedin.com/profile">
+        <i class="fab fa-linkedin-in"></i> LinkedIn
+      </a>
+
+      <a itemprop="url" href="assets/files/SANDERS_Resume.pdf" download>
+        <i class="far fa-file-pdf"></i>Resume
+      </a>
+      <p>&copy; 2023 <a href="#">Eric Sanders</a></p>
+    </footer>
+
+    <script src="js/vendor/modernizr-3.12.0.min.js"></script>
+    <script src="assets/js/app.js"></script>
   </main>
-
-  <footer>
-    <ul class="related-links">
-      <li>
-        <a itemprop="url" rel="me" href="https://github.com/profile"><i class="fab fa-github-square"></i> github</a>
-      </li>
-      <li>
-        <a itemprop="url" rel="me" href="http://linkedin.com/profile"><i class="fab fa-linkedin-in"></i> linkedin</a>
-      </li>
-      <li>
-        <a itemprop="url" href="assets/files/SANDERS_Resume.pdf" download><i class="far fa-file-pdf"></i> pdf resume</a>
-      </li>
-    </ul>
-    <div id="copyright">
-      &copy; company. All rights reserved.
-    </div>
-  </footer>
-
-  <script src="js/vendor/modernizr-3.12.0.min.js"></script>
-  <script src="js/app.js"></script>
-
 </body>
-
-
 
 </html>
