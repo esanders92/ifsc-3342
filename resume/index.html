@@ -13,22 +13,35 @@
 </head>
 
 <body>
-  <main class="wrapper" itemscope itemtype="http://schema.org/Person">
+  <main class="container" itemscope itemtype="http://schema.org/Person">
     <header class="box header">
       <h1>Eric D. Sanders</h1>
+      <a itemprop="url" rel="me" href="https://github.com/profile">
+        <i class="fab fa-github-square"></i> Github
+      </a>
+
+      <a itemprop="url" rel="me" href="http://linkedin.com/profile">
+        <i class="fab fa-linkedin-in"></i> LinkedIn
+      </a>
+
+      <a itemprop="url" href="assets/files/SANDERS_Resume.pdf" download>
+        <i class="far fa-file-pdf"></i>Resume
+      </a>
 
       <nav class="primary">
         <button type="button" class="collapsible"><b>About Me</b></button>
-
         <div class="about">
-          <p itemprop="description">
-            A constant student and driven worker, I am seeking a
-            part-time or full-time position with a talented team to
-            grow and hone my skillset. With a wide variety of past
-            experience, I will bring different perspectives and apply
-            them to better help with any given project.
-          </p>
-          <img itemprop="image" src="assets/img/pic.png" alt="Eric Sanders" />
+          <div class="introduction">
+            <img itemprop="image" src="assets/img/pic.png" alt="Eric Sanders" />
+            <p itemprop="description">
+              A constant student and driven worker, I am seeking a
+              part-time or full-time position with a talented team to
+              grow and hone my skillset. With a wide variety of past
+              experience, I will bring different perspectives and apply
+              them to better help with any given project.
+            </p>
+          </div>
+
           <dl>
             <dt>Name</dt>
             <dd itemprop="name">
@@ -51,10 +64,6 @@
             </dd>
           </dl>
         </div>
-
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
       </nav>
     </header>
 
@@ -201,17 +210,6 @@
     </section>
 
     <footer class="box footer">
-      <a itemprop="url" rel="me" href="https://github.com/profile">
-        <i class="fab fa-github-square"></i> Github
-      </a>
-
-      <a itemprop="url" rel="me" href="http://linkedin.com/profile">
-        <i class="fab fa-linkedin-in"></i> LinkedIn
-      </a>
-
-      <a itemprop="url" href="assets/files/SANDERS_Resume.pdf" download>
-        <i class="far fa-file-pdf"></i>Resume
-      </a>
       <p>&copy; 2023 <a href="#">Eric Sanders</a></p>
     </footer>
 
