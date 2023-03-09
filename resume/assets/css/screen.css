@@ -21,7 +21,8 @@ body {
 }
 
 img {
-    max-width: 100%
+    max-width: 100%;
+    padding-right: 50px;
 }
 
 .image {
@@ -31,7 +32,7 @@ img {
 
 .description {
     color: #CD5C5C;
-    font: italic 10px "Fira Sans", serif;
+    font: 5px;
 }
 
 /* Instructor */
@@ -46,6 +47,7 @@ main h1 {
     text-align: center;
     font-weight: 400;
     font-variant: small-caps;
+    margin-bottom: 1px;
 }
 
 main h1:before,
@@ -65,6 +67,11 @@ main h1:before {
 main h1:after {
     margin-left: 15px;
 }
+
+.introduction {
+    border: #CD5C5C;
+}
+
 
 dl {
     display: grid;
@@ -94,6 +101,7 @@ dd {
     justify-content: center;
     list-style: none;
     padding: 0;
+    margin-bottom: 20px;
 }
 
 .related-links .svg-inline--fa {
@@ -103,12 +111,13 @@ dd {
 
 .related-links a {
     border: 1px solid #000;
+    margin-left: 10px;
     padding: 8px 16px;
     text-align: center;
     text-decoration: none;
     color: #222222;
     text-transform: uppercase;
-    font-size: .75em;
+    font-size: .40em;
     background: rgba(0, 0, 0, .65);
     transition: background-color 0.5s ease;
     color: #fff;
