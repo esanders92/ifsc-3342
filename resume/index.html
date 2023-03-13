@@ -33,9 +33,8 @@
       </section>
 
       <nav class="primary">
-        <button type="button" class="collapsible"><b>About Me</b></button>
-        <div class="about">
-          <div class="introduction">
+        <section class="about" id="about">
+          <article id="introduction">
             <img itemprop="image" src="assets/img/pic.png" alt="Eric Sanders" />
             <p class="description" itemprop="description">
               A constant student and driven worker, I am seeking a
@@ -44,9 +43,9 @@
               experience, I will bring different perspectives and apply
               them to better help with any given project.
             </p>
-          </div>
+          </article>
 
-          <dl>
+          <dl id="information">
             <dt>Name</dt>
             <dd itemprop="name">
               <span itemprop="givenName">Eric</span>
@@ -67,44 +66,16 @@
               <a itemprop="email" href="mailto:email@mail.com">ersanders92@outlook.com</a>
             </dd>
           </dl>
-        </div>
+        </section>
       </nav>
     </header>
 
     <aside class="box sidebar">
       <section class="widget">
-        <button type="button" class="collapsible"><b>Education</b></button>
-        <section id="education" class="education">
-          <article class="certificate" itemprop="alumniOf" itemscope
-            itemtype="http://schema.org/EducationalOrganization">
-            <h2 itemprop="name">
-              <b>UNIVERSITY OF ARKANSAS AT LITTLE ROCK | </b>
-              <span itemprop="location" itemscope>
-                <small>Little Rock, AR</small>
-              </span>
-            </h2>
-            <span itemprop="description">
-              <abbr title="Bachelor's of Science">B.A., </abbr>
-              Computer Science | Expected May 2024
-            </span>
-          </article>
+        <h2><b>Skills</b></h2>
+        <section id="Skills" class="skills"></section>
 
-          <article class="certificate" itemprop="alumniOf" itemscope
-            itemtype="http://schema.org/EducationalOrganization">
-            <h2 itemprop="name">
-              <b>PULASKI TECHNICAL COLLEGE | </b>
-              <span itemprop="location" itemscope>
-                <small>North Little Rock, AR</small>
-              </span>
-            </h2>
-            <span itemprop="description"><abbr title="Associate's of Computer Science">A.S., </abbr>Computer Programming
-              Graduated August 2020 |
-              <i>GPA – 3.47</i>
-            </span>
-          </article>
-        </section>
-
-        <button type="button" class="collapsible"><b>Activities</b></button>
+        <h2><b>Activities</b></h2>
         <article id="activities" class="activities">
           <article class="activity">
             <h2>
@@ -121,7 +92,36 @@
     </aside>
 
     <section class="box content">
-      <button type="button" class="collapsible"><b>Experience</b></button>
+      <h2><b>Education</b></h2>
+      <section id="education" class="education">
+        <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+          <h2 itemprop="name">
+            <b>UNIVERSITY OF ARKANSAS AT LITTLE ROCK | </b>
+            <span itemprop="location" itemscope>
+              <small>Little Rock, AR</small>
+            </span>
+          </h2>
+          <span itemprop="description">
+            <abbr title="Bachelor's of Science">B.A., </abbr>
+            Computer Science | Expected May 2024
+          </span>
+        </article>
+
+        <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+          <h2 itemprop="name">
+            <b>PULASKI TECHNICAL COLLEGE | </b>
+            <span itemprop="location" itemscope>
+              <small>North Little Rock, AR</small>
+            </span>
+          </h2>
+          <span itemprop="description"><abbr title="Associate's of Computer Science">A.S., </abbr>Computer Programming
+            Graduated August 2020 |
+            <i>GPA – 3.47</i>
+          </span>
+        </article>
+      </section>
+
+      <h2><b>Experience</b></h2>
       <section id="experience" class="experience">
         <!-- current job -->
         <article class="job">
@@ -208,9 +208,6 @@
           </p>
         </article>
       </section>
-
-      <button type="button" class="collapsible"><b>Skills</b></button>
-      <section id="Skills" class="skills"></section>
     </section>
 
     <footer class="box footer">
@@ -218,7 +215,7 @@
     </footer>
 
     <script src="js/vendor/modernizr-3.12.0.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <!-- <script src="assets/js/app.js"></script> -->
   </main>
 </body>
 
