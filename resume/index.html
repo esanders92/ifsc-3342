@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>CSS Grid Exercise 1</title>
+  <title>Eric Sanders | Resume</title>
   <link rel="stylesheet" href="assets/css/screen.css" />
   <meta name="description"
     content="We are going to refine this document down to a good starting point for all html5 projects moving forward." />
@@ -18,11 +18,11 @@
       <section class="head">
         <h1>Eric D. Sanders</h1>
         <article class="related-links">
-          <a itemprop="url" rel="me" href="https://github.com/profile">
+          <a itemprop="url" rel="me" href="https://github.com/eds9992">
             <i class="fab fa-github-square"></i> Github
           </a>
 
-          <a itemprop="url" rel="me" href="http://linkedin.com/profile">
+          <a itemprop="url" rel="me" href="http://www.linkedin.com/in/ersanders92">
             <i class="fab fa-linkedin-in"></i> LinkedIn
           </a>
 
@@ -72,15 +72,39 @@
 
     <aside class="box sidebar">
       <section class="widget">
-        <h2><b>Skills</b></h2>
-        <section id="Skills" class="skills"></section>
+        <h2>Skills</h2>
+        <section id="skills" class="skills">
+          <h3 class="front-end">Front-End</h3>
+          <div class="skills-front-end">
+            <p class="skill">HTML</p>
+            <p class="skill">CSS</p>
+            <p class="skill">JavaScript</p>
+            <p class="skill">React</p>
+          </div>
 
-        <h2><b>Activities</b></h2>
+          <h3 class="back-end">Back-End</h3>
+          <div class="skills-back-end">
+            <p class="skill">C++</p>
+            <p class="skill">C#</p>
+            <p class="skill">Python</p>
+            <p class="skill">Java</p>
+          </div>
+
+
+          <h3 class="database">Database</h3>
+          <div class="skills-database">
+            <p class="skill">SQL</p>
+            <p class="skill">MongoDB</p>
+          </div>
+
+        </section>
+
+        <h2>Activities</h2>
         <article id="activities" class="activities">
           <article class="activity">
-            <h2>
+            <h3>
               <b>Rock City Robotics | <i id="role">Mentor</i></b>
-            </h2>
+            </h3>
             <p>
               - Received an award for being the highest placing rookie
               team
@@ -88,19 +112,29 @@
             <p>- Received an award for placing second in the state</p>
           </article>
         </article>
+
+        <h2>Certifications</h2>
+        <article id="certifications" class="certifications">
+          <article class="certificate">
+            <h3>
+              Python
+            </h3>
+            <p>Entry-Level | <i id="role">July 2020</i></p>
+          </article>
+        </article>
       </section>
     </aside>
 
     <section class="box content">
-      <h2><b>Education</b></h2>
+      <h2>Education</h2>
       <section id="education" class="education">
         <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
-          <h2 itemprop="name">
-            <b>UNIVERSITY OF ARKANSAS AT LITTLE ROCK | </b>
+          <h3 itemprop="name">
+            UNIVERSITY OF ARKANSAS AT LITTLE ROCK |
             <span itemprop="location" itemscope>
               <small>Little Rock, AR</small>
             </span>
-          </h2>
+          </h3>
           <span itemprop="description">
             <abbr title="Bachelor's of Science">B.A., </abbr>
             Computer Science | Expected May 2024
@@ -108,12 +142,12 @@
         </article>
 
         <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
-          <h2 itemprop="name">
+          <h3 itemprop="name">
             <b>PULASKI TECHNICAL COLLEGE | </b>
             <span itemprop="location" itemscope>
               <small>North Little Rock, AR</small>
             </span>
-          </h2>
+          </h3>
           <span itemprop="description"><abbr title="Associate's of Computer Science">A.S., </abbr>Computer Programming
             Graduated August 2020 |
             <i>GPA – 3.47</i>
@@ -121,12 +155,12 @@
         </article>
       </section>
 
-      <h2><b>Experience</b></h2>
+      <h2>Experience</h2>
       <section id="experience" class="experience">
         <!-- current job -->
         <article class="job">
-          <h2 itemprop="jobTitle">Sales Associate
-          </h2>
+          <h3 itemprop="jobTitle">Sales Associate
+          </h3>
           <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
             <span itemprop="name"><a itemprop="url" href="http://link-to-company.com"><b>LOWE’S HOME
                   IMPROVEMENT</b></a></span>
@@ -143,7 +177,7 @@
         </article>
         <!-- Previous Jobs - Notice Slightly Different Format-->
         <article class="job" itemscope itemtype="http://schema.org/Organization">
-          <h2 itemprop="name">Media Intern</h2>
+          <h3 itemprop="name">Media Intern</h3>
           <span itemprop="location" itemscope itemtype="http://schema.org/Place">
             <span itemprop="name"><a itemprop="url" href="http://link-to-company.com"><b>DAVE CREEK MEDIA</b></a>
             </span>
@@ -154,13 +188,10 @@
           <span itemprop="startDate" content="2019-06-21T20:00">June 2019 -
           </span>
           <span itemprop="endDate" content="2019-08-21T20:00">August 2019</span>
-          <p itemprop="description">
-
-          </p>
         </article>
 
         <article class="job" itemscope itemtype="http://schema.org/Organization">
-          <h2 itemprop="name">Laborer</h2>
+          <h3 itemprop="name">Laborer</h3>
           <span itemprop="location" itemscope itemtype="http://schema.org/Place">
             <span itemprop="name"><a itemprop="url" href="http://link-to-company.com"><b>BALDWIN & SHELL CONSTRUCTION
                   COMPANY</b></a></span>
@@ -170,13 +201,10 @@
           </span>
           <span itemprop="startDate" content="2015-08-21T20:00">August 2015</span>
           <span itemprop="endDate" content="2017-06-21T20:00">June 2017</span>
-          <p itemprop="description">
-
-          </p>
         </article>
 
         <article class="job" itemscope itemtype="http://schema.org/Organization">
-          <h2 itemprop="name">Dish Washer/Line Cook</h2>
+          <h3 itemprop="name">Dish Washer/Line Cook</h3>
           <span itemprop="location" itemscope itemtype="http://schema.org/Place">
             <span itemprop="name"><a itemprop="url" href="http://link-to-company.com"><b>MAYFLOWER
                   RESTURAUNT</b></a></span>
@@ -186,13 +214,10 @@
           </span>
           <span itemprop="startDate" content="2014-08-21T20:00">August 2014</span>
           <span itemprop="endDate" content="2015-06-21T20:00">June 2017</span>
-          <p itemprop="description">
-
-          </p>
         </article>
 
         <article class="job" itemscope itemtype="http://schema.org/Organization">
-          <h2 itemprop="name">Student Ambassador</h2>
+          <h3 itemprop="name">Student Ambassador</h3>
           <span itemprop="location" itemscope itemtype="http://schema.org/Place">
             <span itemprop="name"><a itemprop="url" href="http://link-to-company.com"><b>UNIVERSITY OF ARKANSAS CENTER
                   FOR MULTICULTURAL
@@ -203,9 +228,6 @@
           </span>
           <span itemprop="startDate" content="2013-06-21T20:00">June 2013</span>
           <span itemprop="endDate" content="2013-08-21T20:00">August 2013</span>
-          <p itemprop="description">
-
-          </p>
         </article>
       </section>
     </section>
