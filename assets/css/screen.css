@@ -1,16 +1,33 @@
+:root {
+  --bg-color-main: #FFFFFF;
+  --bg-color-secondary: #A8A99E;
+
+  --bg-color-header: #736F60;
+  --bg-color-border: #33A4A6;
+  --bg-color-footer: #736F60;
+
+  --txt-color: #000000;
+}
+
 * {
   margin: 0px;
   padding: 0px;
-  background-color: #FFFFFF;
+  background-color: var(--bg-color-main);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-  background-color: #A8A99E
+header,
+footer {
+  padding-bottom: 5px;
+  background-color: var(--bg-color-secondary);
+}
+
+footer {
+  position: absolute;
 }
 
 h1 {
-  outline: #33A4A6 solid 5px;
+  outline: var(--bg-color-border) solid 5px;
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
   width: 600px;
@@ -20,7 +37,7 @@ h1 {
   text-align: center;
   font-size: 60px;
   font-weight: 100;
-  color: #736F60;
+  color: var(--bg-color-header);
 }
 
 h2 {
@@ -28,17 +45,38 @@ h2 {
 }
 
 nav {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+  background-color: var(--bg-color-secondary);
 }
 
 body {
   text-align: center;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  background-image: url("../img/bg-tile.jpg");
-  background-color: #A8A99E;
   font-size: 16px;
   line-height: 1.5em;
-  overflow: auto;
+  overflow: none;
+}
+
+button {
+  padding: 5px;
+  background-color: var(--bg-color-main);
+  border-style: solid;
+  border-color: var(--bg-color-border);
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+button:hover {
+  background-color: var(--bg-color-border);
+  color: var(--bg-color-main);
+  font-size: 14px;
+}
+
+.container {
+  padding-top: 20px;
 }
 
 .row {
@@ -49,23 +87,23 @@ body {
 
 .col {
   padding: 20px;
-  border: 1px solid #c0c0c0;
+  border: var(--bg-color-secondary) 1px solid;
   border-radius: 2px;
 }
 
 /* Base */
 .col:nth-child(odd) {
-  outline: #33A4A6 solid 3px;
+  outline: var(--bg-color-border) solid 3px;
 }
 
 .col p {
-  color: #131313;
+  color: var(--txt-color);
   margin: 0px;
-  /*text-shadow: 1px 1px #000;*/
 }
 
-.fancy {
-  display: none;
+.media {
+  margin: 20px;
+  border: var(--bg-color-border) 5px;
 }
 
 /* Max Width */
@@ -87,8 +125,4 @@ body {
   .row {
     grid-template-columns: repeat(4, 1fr);
   }
-}
-
-footer {
-  background-color: #A8A99E
 }

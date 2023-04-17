@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Eric Sanders" />
     <meta name="description" content="This is the hompage for IFSC 3342 - Mobile Web Development" />
+
     <link rel="stylesheet" href="assets/css/screen.css" />
+    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
+
     <title>Eric Sanders</title>
 </head>
 
@@ -16,13 +19,13 @@
         <h1>Eric Sanders</h1>
     </header>
 
-    <nav>
-        <a href="pre-assessment/index.html">Pre-Assessment</a> ||
-        <a href="html5-demo/index.html">HTML5 Demo</a> ||
-        <a href="html5-grid/index.html">Grid Demo</a> ||
-        <a href="media-queries/index.html">Media Queries Demo</a> ||
-        <a href="resume/index.html">Resume</a>||
-        <a href="final-project/index.html">Final Project</a>
+    <nav class="nav">
+        <button type="button" onclick="location.href='pre-assessment/index.html'">Pre-Assessment</button>
+        <button type="button" onclick="location.href='html5-demo/index.html'">HTML5 Demo</button>
+        <button type="button" onclick="location.href='html5-grid/index.html'">Grid Demo</button>
+        <button type="button" onclick="location.href='media-queries/index.html'">Media Queries Demo</button>
+        <button type="button" onclick="location.href='resume/index.html'">Resume</button>
+        <button type="button" onclick="location.href='final-project/index.html'">Final Project</button>
     </nav>
     <section class="container">
         <div class="row">
@@ -45,14 +48,29 @@
                     justo nulla pretium nulla, et condimentum nisl nulla in sapien. Vivamus dignissim vestibulum
                     viverra. Quisque dolor ante, eleifend ut laoreet in, accumsan id dui. </p>
             </article>
-            <div class="fancy">
-                <h1>Retina Display</h1>
-            </div>
+        </div>
+
+        <div class="media">
+            <article class="audio"></article>
+            <article class="video">
+                <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+                    poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+                    <source src="assets/video/hudson-shelter-falls.mp4" type="video/mp4" />
+                    <source src="assets/video/hudson-shelter-falls.webm" type="video/webm" />
+                    <source src="assets/video/hudson-shelter-falls.ogv" type="video/ogv" />
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a
+                        web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                    </p>
+                </video>
+
+                <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+            </article>
         </div>
     </section>
-    <article>
-        <footer></footer>
-    </article>
+
+    <footer></footer>
 </body>
 
 </html>
