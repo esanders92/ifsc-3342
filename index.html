@@ -2,15 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Eric Sanders" />
-    <meta name="description" content="This is the hompage for IFSC 3342 - Mobile Web Development" />
+    <meta name="description" content="This is the homepage for IFSC 3342 - Mobile Web Development" />
 
     <link rel="stylesheet" href="assets/css/screen.css" />
     <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../res/fontawesome/css/all.css" />
     <title>Eric Sanders</title>
 </head>
 
@@ -20,57 +22,112 @@
     </header>
 
     <nav class="nav">
-        <button type="button" onclick="location.href='pre-assessment/index.html'">Pre-Assessment</button>
-        <button type="button" onclick="location.href='html5-demo/index.html'">HTML5 Demo</button>
-        <button type="button" onclick="location.href='html5-grid/index.html'">Grid Demo</button>
-        <button type="button" onclick="location.href='media-queries/index.html'">Media Queries Demo</button>
-        <button type="button" onclick="location.href='resume/index.html'">Resume</button>
-        <button type="button" onclick="location.href='final-project/index.html'">Final Project</button>
+        <button type="button" onclick="location.href='pre-assessment/index.html'">
+            Pre-Assessment
+        </button>
+        <button type="button" onclick="location.href='html5-demo/index.html'">
+            HTML5 Demo
+        </button>
+        <button type="button" onclick="location.href='html5-grid/index.html'">
+            Grid Demo
+        </button>
+        <button type="button" onclick="location.href='media-queries/index.html'">
+            Media Queries Demo
+        </button>
+        <button type="button" onclick="location.href='resume/index.html'">
+            Resume
+        </button>
+        <button type="button" onclick="location.href='final-project/index.html'">
+            Final Project
+        </button>
     </nav>
+
     <section class="container">
         <div class="row">
             <article class="col">
-                <h2><a href="css-grid-exercise-1/index.html">CSS Grid Exercise 1</a></h2>
+                <h2>
+                    <a href="css-grid-exercise-1/index.html">CSS Grid Exercise 1</a>
+                </h2>
                 <p>An exercise using CSS Grid to restyle Grid Demo page.</p>
             </article>
             <article class="col">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo, diam ut tincidunt molestie,
-                    justo nulla pretium nulla, et condimentum nisl nulla in sapien. Vivamus dignissim vestibulum
-                    viverra. Quisque dolor ante, eleifend ut laoreet in, accumsan id dui. </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nulla commodo, diam ut tincidunt molestie, justo nulla
+                    pretium nulla, et condimentum nisl nulla in sapien.
+                    Vivamus dignissim vestibulum viverra. Quisque dolor
+                    ante, eleifend ut laoreet in, accumsan id dui.
+                </p>
             </article>
             <article class="col">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo, diam ut tincidunt molestie,
-                    justo nulla pretium nulla, et condimentum nisl nulla in sapien. Vivamus dignissim vestibulum
-                    viverra. Quisque dolor ante, eleifend ut laoreet in, accumsan id dui. </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nulla commodo, diam ut tincidunt molestie, justo nulla
+                    pretium nulla, et condimentum nisl nulla in sapien.
+                    Vivamus dignissim vestibulum viverra. Quisque dolor
+                    ante, eleifend ut laoreet in, accumsan id dui.
+                </p>
             </article>
             <article class="col">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo, diam ut tincidunt molestie,
-                    justo nulla pretium nulla, et condimentum nisl nulla in sapien. Vivamus dignissim vestibulum
-                    viverra. Quisque dolor ante, eleifend ut laoreet in, accumsan id dui. </p>
-            </article>
-        </div>
-
-        <div class="media">
-            <article class="audio"></article>
-            <article class="video">
-                <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
-                    poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
-                    <source src="assets/video/hudson-shelter-falls.mp4" type="video/mp4" />
-                    <source src="assets/video/hudson-shelter-falls.webm" type="video/webm" />
-                    <source src="assets/video/hudson-shelter-falls.ogv" type="video/ogv" />
-                    <p class="vjs-no-js">
-                        To view this video please enable JavaScript, and consider upgrading to a
-                        web browser that
-                        <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-                    </p>
-                </video>
-
-                <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nulla commodo, diam ut tincidunt molestie, justo nulla
+                    pretium nulla, et condimentum nisl nulla in sapien.
+                    Vivamus dignissim vestibulum viverra. Quisque dolor
+                    ante, eleifend ut laoreet in, accumsan id dui.
+                </p>
             </article>
         </div>
     </section>
 
-    <footer></footer>
+    <section class="video">
+        <article class="video-player">
+            <!-- Used VideoJS: https://videojs.com/ -->
+            <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+                poster="/assets/img/hudson-shelter-falls-poster.jpg" data-setup="{}">
+                <source src="assets/video/hudson-shelter-falls.mp4" type="video/mp4" />
+                <source src="assets/video/hudson-shelter-falls.webm" type="video/webm" />
+                <source src="assets/video/hudson-shelter-falls.ogv" type="video/ogv" />
+                <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and
+                    consider upgrading to a web browser that
+                    <a rel="noopener" href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5
+                        video</a>
+                </p>
+            </video>
+        </article>
+    </section>
+
+    <footer>
+        <div class="audio-player">
+            <!-- https://codeconvey.com/customize-html5-audio-player-css/  ||  Used this to help style, as I could find no way to style the default controls -->
+            <div class="timeline">
+                <div class="progress"></div>
+            </div>
+            <div class="controls">
+                <div class="play-container">
+                    <div class="toggle-play play"></div>
+                </div>
+                <div class="time">
+                    <div class="current">0:00</div>
+                    <div class="divider">/</div>
+                    <div class="length"></div>
+                </div>
+                <div class="volume-container">
+                    <div class="volume-button">
+                        <div class="volume icono-volumeMedium"></div>
+                    </div>
+
+                    <div class="volume-slider">
+                        <div class="volume-percentage"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+    <script src="/assets/js/audio-player.js"></script>
 </body>
 
 </html>
