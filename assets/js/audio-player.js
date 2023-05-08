@@ -5,7 +5,7 @@
 // - Hover over sliders to see preview of timestamp/volume change
 
 const audioPlayer = document.querySelector(".audio-player");
-const audio = new Audio("/assets/audio/thunder.mp3");
+const audio = new Audio("./assets/audio/thunder.mp3");
 //credit for song: Adrian kreativaweb@gmail.com
 
 console.dir(audio);
