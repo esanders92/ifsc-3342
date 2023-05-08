@@ -1,0 +1,36 @@
+@import url(screen.css);
+
+.card {
+	background: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
+	border-radius: 0px !important;
+}
+
+input,
+textarea,
+button {
+	border-radius: 0% !important;
+}
+
+.text-center {
+	color: var(--color-tertiary);
+}
+
+.btn {
+	background: var(--color-header-footer) !important;
+	color: var(--color-accent);
+}
+
+.btn:hover {
+	color: var(--color-tertiary);
+}
+
+.bg-image {
+	background-image: url("../img/bg-main-contact.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.text-bg-dark {
+	background-image: none;
+}
