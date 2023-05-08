@@ -232,10 +232,6 @@ a:hover {
 	.nav-menu.active {
 		left: 0;
 	}
-
-	.text-bg-dark {
-		background-image: url(../img/bg-main-mobile.jpg);
-	}
 }
 
 /* Tablet */
